@@ -3,7 +3,8 @@
 #include <locale.h>
 
 // Atividade 2 v4
-
+// Author: Tennison Capra
+/*
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
@@ -45,5 +46,5 @@ int main(){
 	
 	return 0;
 }
-
+*/
 
