@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Atividade 2 v
+// Atividade 2 v3
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
@@ -13,9 +13,10 @@ int main(){
 	printf("Quantas vezes você deseja fazer a conversão de temperatura? ");
 	scanf("%d", &n);
 	
-	for(int i=1; i<=n; i++){
+	for(int i=0; i<n; i++){
 		printf("\nDigite a temperatura em graus Fahrenheit: ");
 		scanf("%f", &F);
+		
 		C = (F-32)*5/9;
 		K = C + 273.15;
 		

@@ -2,17 +2,23 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Atividade 2 v2
+// Atividade 2 v4
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
 	float F, C, K;
-	int n = 1;
+	int n, q=0;
 	
-	do{
+	printf("Quantas vezes você deseja fazer a conversão de temperatura? ");
+	scanf("%d", &n);
+	float vect[n];
+	
+	for(int i=0; i<n; i++){
 		printf("\nDigite a temperatura em graus Fahrenheit: ");
 		scanf("%f", &F);
+		vect[i] = F;
+		
 		C = (F-32)*5/9;
 		K = C + 273.15;
 		
@@ -20,6 +26,7 @@ int main(){
 		printf("Sensação térmica: ");
 		if(C<15){
 			printf("Frio\n");
+			q++;
 		}else{
 			if(C<=30){
 				printf("Normal\n");
@@ -27,9 +34,14 @@ int main(){
 				printf("Quente\n");
 			}
 		}
-		printf("---------------------------\n");
-		n++;	
-	}while(n<=30);
+		
+	}
+	
+	for(int j=0; j<n; j++){
+		printf("Vetor[%d]: %.2f\n", j, vect[j]);
+	}
+	printf("\n--- Quantidade de temperaturas frias digitadas: %d  ---\n", q);
+	printf("\n-------------  Programa Finalizado  --------------\n");	
 	
 	return 0;
 }
