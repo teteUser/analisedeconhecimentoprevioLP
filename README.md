@@ -7,5 +7,5 @@
 
 Feito em:
 
-Exercício 1 e 2 -> Code::Blocks
-Exercício 3v1, 3v2, 3v3, 3v4 e 3v5 -> DevC++
+- Exercício 1 e 2 -> Code::Blocks
+- Exercício 3v1, 3v2, 3v3, 3v4 e 3v5 -> DevC++
